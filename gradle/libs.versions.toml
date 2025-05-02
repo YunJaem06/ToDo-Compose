@@ -11,6 +11,7 @@ composeBom = "2024.04.01"
 ksp = "1.9.0-1.0.13"
 room = "2.6.1"
 hilt = "2.51.1"
+hilt_compiler = "1.2.0"
 hilt-android-gradle-plugin = "2.51.1"
 datastore-preferences = "1.1.2"
 nav-version = "2.8.6"
@@ -35,7 +36,8 @@ room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+dagger-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hilt_compiler" }
 datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore-preferences" }
 navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "nav-version" }
 
