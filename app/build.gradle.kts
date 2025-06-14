@@ -41,6 +41,9 @@ android {
     buildFeatures {
         compose = true
     }
+    hilt {
+        enableAggregatingTask = false // hilt javapot 사용으로 인한 문제 https://ovso.tistory.com/475
+    }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
     }
